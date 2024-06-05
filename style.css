@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  box-shadow: none;
+}
+
+/* Remove all styling from buttons */
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  text-align: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  cursor: pointer; /* Optional: keep the pointer cursor for button-like behavior */
+  border-radius: 4px;
+  padding: 2px 20px;
+}
+
+/* Additional reset to handle specific button states */
+button:focus {
+  outline: none; /* Remove focus outline */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.hero, footer {
+  background-color: #1f2937;
+  color: #f9faf8;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 900;
+}
+.quote {
+  background-color: #e5e7eb;
+  color: #1f2937;
+}
+
+.quote-text {
+  font-size: 36px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+header li, .hero p, button {
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+.header-logo {
+  font-size: 24px;
+  color: #f9faf8;
+}
+
+button, .cta {
+  background-color: #3882f6;
+}
+.cta {
+  color: #e5e7eb;
+}
+.infos h2 {
+  font-size: 36px;
+  font-weight: 900;
+  color: #1f2937;
+}
+.cta button {
+  border-color: #e5e7eb;
+  border: 2px solid #e5e7eb;
+
+}
+
+.infos img {
+  max-width: 150px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.hero img {
+  width: 500px;
+  height: 250px;
+}
+
+/* Container styling */
+.hero .split-image {
+  width: 400px; /* Set the width of the container */
+  height: 200px; /* Set the height of the container */
+  overflow: hidden; /* Hide the overflow */
+  position: relative; /* Needed for absolutely positioning the image */
+}
+
+/* Image styling */
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover the container without stretching */
+  object-position: center; /* Center the image within the container */
+  display: block; /* Remove any extra space at the bottom of the image */
+}
+
+a {
+  color: #e5e7eb;
+  text-decoration: none;
+}
