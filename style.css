@@ -21,6 +21,12 @@ button {
   padding: 2px 20px;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+  padding: 0px;
+}
+
 /* Additional reset to handle specific button states */
 button:focus {
   outline: none; /* Remove focus outline */
@@ -33,12 +39,61 @@ img {
 ul {
   list-style-type: none;
   padding: 0;
-  margin-bottom: 20px;
+  margin: 0;
+}
+
+.hero .split-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 40px 0;
+}
+
+.infos h2 {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.sections {
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.quote {
+  padding: 40px;
+}
+
+.quote-cite {
+  text-align: right;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+blockquote {
+  padding: 20px 100px;
+}
+.sections .split-section {
+  max-width: 200px;;
+  text-align: center;
+}
+
+.split-image, .split-text {
+  flex: 1;
+}
+
+.split-text p {
+  margin-bottom: 10px;
 }
 
 .hero, footer {
   background-color: #1f2937;
   color: #f9faf8;
+}
+
+footer {
+  text-align: center;
 }
 
 .hero h1 {
@@ -50,10 +105,13 @@ ul {
   color: #1f2937;
 }
 
+
 .quote-text {
   font-size: 36px;
   font-weight: 300;
   font-style: italic;
+  white-space: normal;
+  text-align: left;
 }
 
 header li, .hero p, button {
@@ -84,14 +142,31 @@ button, .cta {
 }
 
 .infos img {
-  max-width: 150px;
+  max-width: 200px;
   height: auto;
   border-radius: 8px;
 }
 
-.hero img {
-  width: 500px;
-  height: 250px;
+.container.cta-container {
+  padding: 100px;
+}
+
+.cta {
+  border-radius: 8px;
+  padding: 20px 80px;
+  margin: 0 100px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.cta-left {
+  flex: 3;
+}
+
+.cta-right {
+  flex: 1;
+  text-align: right;
 }
 
 /* Container styling */
@@ -110,8 +185,26 @@ button, .cta {
   object-position: center; /* Center the image within the container */
   display: block; /* Remove any extra space at the bottom of the image */
 }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 40px;
+}
 
 a {
   color: #e5e7eb;
   text-decoration: none;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul {
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
